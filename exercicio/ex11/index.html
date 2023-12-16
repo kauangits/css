@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+   <p>vamos aprender a reprodizir audios em html</p>
+</picture>
+
+<h1>Reproduzindo audio</h1>
+<p>vamos aprender a reproduzir</p>
+<audio src="media/Kanye West - Violent Crimes (Lyric Video) (320  kbps) (HostingPlesk.IN).mp3" controls autoplay></audio>
+<h1>maneira melhor</h1>
+<audio preload="metadata" controls autoplay loop>
+   <source src="media/Kanye West - Violent Crimes (Lyric Video) (320  kbps) (HostingPlesk.IN).mp3" type="audio/mpeg">
+ <p>infelizmente o navegado nao esta Reproduzindo o audio <a href="media/Kanye West - Violent Crimes (Lyric Video) (320  kbps) (HostingPlesk.IN).mp3"></a></p>
+
+</audio>
+</body>
+</html>
