@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+caption{
+ font-size: 1.5em;
+ font-weight: bold;
+ padding: 10px;
+}
+table{ 
+    position: relative;
+    border-collapse: collapse;
+    width: 500px;
+}
+thead{
+    background-color: lightgray;
+    color: white;
+}
+thead > tr> th{
+    position: sticky;
+    top: -1px;
+    background-color: lightgray; ;
+}
+
+tbody tr:nth-child(2n){
+  background-color: rgba(128, 128, 128, 0.672);
+}
+tfoot{
+    background-color: gray;
+    color: white;
+}
+td,th{
+ border: 1px solid black;
+ border-collapse: collapse;
+ padding: 8px;
+}
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+     <table>
+        <caption>Populacao da unidades federativas</caption>
+        <thead>
+            <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">Populacao</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao paulo</td>
+                <td>400000</td>
+            </tr>
+            <tr>
+                <td>Rio Janeiro</td>
+                <td>900000</td>
+            </tr>
+            <tr>
+            <td>Ceara</td>
+            <td>44589</td>
+
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>32349</td>
+            </tr>
+        </tbody>
+         <tfoot>
+            <tr>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>23489</strong></td>
+
+            </tr>
+         </tfoot>
+     </table>
+</body>
+</html>
