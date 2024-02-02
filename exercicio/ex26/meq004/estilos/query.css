@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* todas as demais midias
+
+pequenas telas: 600px
+celular de 600 ate 768px
+tablet 768px ate 992px
+desktop 992px ate 1200px 
+grandes telas acima de 1200px
+
+*/
+
+@media print {
+    body{
+        background-image: url(../../imagens/back-print.jpg); /* inutil */
+        font-family: 'Courier New', Courier, monospace;
+      
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main::after{
+        content: 'essa impressao foi feita atraves da pqp';
+    }
+
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  body{
+    background-image: url(../../imagens/back-tablet.jpg);
+  }
+  
+img#pc{ display: none;}
+img#print{ display: none;}
+img#tv{ display: none;}
+img#tablet{ display: block;}
+img#phone{ display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+   body{
+    background-image: url(../../imagens/back-pc.jpg);
+   }
+   
+img#pc{ display: none;}
+img#print{ display: none;}
+img#tv{ display: none;}
+img#tablet{ display: none;}
+img#phone{ display: none;}
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+      main{
+        width: 700px;
+      }
+img#pc{ display: none;}
+img#print{ display: none;}
+img#tv{ display: block;}
+img#tablet{ display: none;}
+img#phone{ display: none;}
+}
